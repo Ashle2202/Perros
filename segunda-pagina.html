@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conoce a Benji</title>
+    <link rel="stylesheet" href="css/stylep2.css">
+</head>
+<style> body {
+    font-family: 'Arial', sans-serif;
+    background-color: rgb(149, 236, 149);
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    transition: background-color 0.5s ease-in-out;
+}
+
+h1 {
+    color: #0faa0f;
+    font-size: 2.5em;
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
+    transition: color 0.4s ease-in-out, transform 0.3s ease-in-out;
+}
+h1:hover {
+    color: #1cd61c;
+    transform: scale(1.05);
+}
+
+a {
+    display: inline-block;
+    padding: 15px 30px;
+    margin: 10px;
+    text-decoration: none;
+    background: linear-gradient(45deg, #0faa0f, #1cd61c);
+    color: white;
+    border-radius: 25px;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: background 0.3s, transform 0.3s ease-in-out, box-shadow 0.3s;
+    position: relative;
+    overflow: hidden;
+}
+a::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background: rgba(255, 255, 255, 0.2);
+    transition: width 0.5s ease-out, height 0.5s ease-out, top 0.5s ease-out, left 0.5s ease-out;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+a:hover {
+    background: linear-gradient(45deg, #1cd61c, #2be62b);
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+}
+a:hover::before {
+    width: 0;
+    height: 0;
+}
+
+p {
+    background: none;
+    padding: 10px;
+    max-width: 800px;
+    margin: 20px auto;
+    text-align: justify;
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #333;
+}
+
+strong {
+    color: #0faa0f;
+    transition: color 0.3s ease-in-out;
+}
+strong:hover {
+    color: #1cd61c;
+}
+
+.paw-prints {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: url('https://i.imgur.com/3cZ6fM0.png') no-repeat center;
+    background-size: contain;
+    opacity: 0.2;
+    transition: opacity 0.3s ease-in-out, transform 1s ease-in-out;
+}
+.paw1 { top: 10%; left: 10%; transform: rotate(-15deg) scale(1); animation: float 4s infinite alternate ease-in-out; }
+.paw2 { top: 30%; right: 15%; transform: rotate(20deg) scale(0.9); animation: float 5s infinite alternate ease-in-out; }
+.paw3 { bottom: 20%; left: 20%; transform: rotate(-10deg) scale(1.1); animation: float 6s infinite alternate ease-in-out; }
+.paw4 { bottom: 5%; right: 10%; transform: rotate(25deg) scale(0.95); animation: float 3.5s infinite alternate ease-in-out; }
+
+@keyframes float {
+    from { transform: translateY(0) scale(1); }
+    to { transform: translateY(-10px) scale(1.05); }
+}
+</style>
+<body>
+    <h1>Conoce un poquito más de Benji</h1>
+    <a href="index.html"> Regresar al Inicio</a>
+    <div class="paw-prints paw1"></div>
+    <div class="paw-prints paw2"></div>
+    <div class="paw-prints paw3"></div>
+    <div class="paw-prints paw4"></div>
+    <p>  
+        ¡Hola Humano! Soy un <strong>Shih Tzu</strong>, mi nombre es Benji, tengo 5 años. <br> 
+        Mi cumpleaños número 6 es el 28 de octubre.  
+        <br><br>
+    
+        <strong>Mi apariencia</strong> <br>  
+        Soy un perrito pequeño pero robusto, mido entre 20 y 28 cm y peso entre 4 y 7 kg. <br>  
+        Mi pelaje es largo, sedoso y abundante, así que necesito cuidados constantes para verme siempre hermoso. <br>  
+        Vengo en muchos colores, pero todos dicen que tengo una cara adorable con mi hocico chato y mis ojitos grandes y expresivos.  
+        <br><br>
+    
+        <strong>Mi personalidad</strong> <br>  
+        <strong>🐾 Cariñoso, pero a mi manera:</strong> Me gusta estar contigo, pero no me estés abrazando todo el tiempo… cuando yo quiera cariño, te lo haré saber. <br>  
+        <strong>🐾 Un poquito gruñón:</strong> Si algo no me gusta, lo diré con mi mejor gruñido. No es que sea malo, solo que tengo carácter. <br>  
+        <strong>🐾 Sociable, pero selectivo:</strong> No me llevo bien con cualquiera. Si me caes bien, seremos amigos; si no, mejor mantén tu distancia. <br>  
+        <strong>🐾 Terco como una roca:</strong> Si no quiero hacer algo, buena suerte tratando de convencerme. <br>  
+        <strong>🐾 Juguetón, pero solo cuando me da la gana:</strong> No esperes que corra todo el día, pero si estoy de humor, te sorprenderé con mi energía. <br>  
+        <strong>🐾 Celoso y posesivo:</strong> Si tengo mi juguete o mi humano favorito, más te vale no intentar quitármelo. <br>  
+        <strong>🐾 Ladrador estratégico:</strong> No ladro por cualquier cosa, pero si veo algo que no me gusta, haré que todos lo sepan. <br>  
+    </p>
+    
+ 
+</body>
+</html>

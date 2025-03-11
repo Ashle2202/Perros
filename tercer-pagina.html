@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conoce a Cody</title>     
+    <link rel="stylesheet" href="css/stylep3.css">
+</head>
+<style> body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(180deg, rgb(233, 136, 136), rgb(255, 94, 94));
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    transition: background 0.5s ease-in-out;
+}
+
+h1 {
+    color: #bb0e0e;
+    font-size: 2.8em;
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
+    transition: color 0.4s ease-in-out, transform 0.3s ease-in-out;
+}
+h1:hover {
+    color: #e60000;
+    transform: scale(1.05);
+}
+
+a {
+    display: inline-block;
+    padding: 15px 30px;
+    margin: 10px;
+    text-decoration: none;
+    background: linear-gradient(45deg, #bb0e0e, #e60000);
+    color: white;
+    border-radius: 25px;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: background 0.3s, transform 0.3s ease-in-out, box-shadow 0.3s;
+    position: relative;
+    overflow: hidden;
+}
+a::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background: rgba(255, 255, 255, 0.2);
+    transition: width 0.5s ease-out, height 0.5s ease-out, top 0.5s ease-out, left 0.5s ease-out;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+a:hover {
+    background: linear-gradient(45deg, #e60000, #ff3b3b);
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+}
+a:hover::before {
+    width: 0;
+    height: 0;
+}
+
+p {
+    background: none;
+    padding: 10px;
+    max-width: 800px;
+    margin: 20px auto;
+    text-align: justify;
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #333;
+}
+
+strong {
+    color: #bb0e0e;
+    transition: color 0.3s ease-in-out;
+}
+strong:hover {
+    color: #e60000;
+}
+
+.paw-prints {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: url('https://i.imgur.com/3cZ6fM0.png') no-repeat center;
+    background-size: contain;
+    opacity: 0.2;
+    transition: opacity 0.3s ease-in-out, transform 1s ease-in-out;
+}
+.paw1 { top: 10%; left: 10%; transform: rotate(-15deg) scale(1); animation: float 4s infinite alternate ease-in-out; }
+.paw2 { top: 30%; right: 15%; transform: rotate(20deg) scale(0.9); animation: float 5s infinite alternate ease-in-out; }
+.paw3 { bottom: 20%; left: 20%; transform: rotate(-10deg) scale(1.1); animation: float 6s infinite alternate ease-in-out; }
+.paw4 { bottom: 5%; right: 10%; transform: rotate(25deg) scale(0.95); animation: float 3.5s infinite alternate ease-in-out; }
+
+@keyframes float {
+    from { transform: translateY(0) scale(1); }
+    to { transform: translateY(-10px) scale(1.05); }
+}
+</style>
+<body>
+    <h1>Conoce un poquito más de Blue</h1>
+    <a href="index.html"> Regresar al Inicio</a>
+    <div class="paw-prints paw1"></div>
+    <div class="paw-prints paw2"></div>
+    <div class="paw-prints paw3"></div>
+    <div class="paw-prints paw4"></div>
+    <p>  
+        ¡Hola Humano! Soy un <strong>Husky</strong>, me llamo Blue, tengo 5 años y mi cumpleaños número 6 es el 3 de julio. <br>  
+        <br>  
+    
+        <strong>Mi apariencia</strong> <br>  
+        Soy un perro de tamaño mediano a grande, mido entre 50 y 60 cm y peso entre 20 y 30 kg. <br>  
+        Mi pelaje es grueso y esponjoso, con colores que van desde el blanco hasta el gris y negro. <br>  
+        Mis ojos son de un azul brillante, lo que me da un aire misterioso y cautivador. <br>  
+        Mis orejas siempre están erguidas, listas para escuchar cualquier cosa que suceda a mi alrededor.  
+        <br><br>  
+    
+        <strong>Mi personalidad</strong> <br>  
+        <strong>🐾 Enérgico y aventurero:</strong> Me encanta correr y explorar. Estoy siempre lleno de energía y me encanta estar al aire libre. <br>  
+        <strong>🐾 Sociable, pero selectivo:</strong> Me llevo bien con los humanos, pero no me gusta acercarme a todos los perros. Si me caes bien, seremos grandes compañeros. <br>  
+        <strong>🐾 Leal y protector:</strong> Siempre estaré a tu lado y te protegeré si siento que algo no está bien. <br>  
+        <strong>🐾 Independiente, pero cariñoso:</strong> No soy de buscar mimos todo el tiempo, pero cuando lo hago, te lo haré saber con una mirada o un pequeño empujón. <br>  
+        <strong>🐾 Necesito un dueño firme:</strong> Soy un poco terco y a veces no hago caso solo con la voz de mando. Necesito un dueño que sea firme y me guíe con paciencia. <br>  
+        <strong>🐾 No ladro sin razón:</strong> No soy un perro ruidoso, pero si algo me molesta o me llama la atención, seguro te lo haré saber. <br>  
+    </p>
+    
+   
+</body>
+</html>
